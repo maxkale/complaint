@@ -13,8 +13,13 @@ include 'header.php';
                 Add Complaint
             </button>
         </div><?php }?>
-        <div class="col-sm-8">
+        <div class="col-sm-4">
             <h4>Complaint List</h4>
+        </div>
+		<div class="col-sm-4 text-right" >
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#filterModal">
+               Filter
+            </button>
         </div>
     </div>
 
@@ -80,6 +85,52 @@ include 'header.php';
             </div>
         </div>
     </div>
+
+	<div class="modal fade" id="filterModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Filter Complaint</h4>
+                </div>
+                <div class="modal-body">
+                    <form method="get" onsubmit='filterComplaint()' id='filterForm' >
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label>From Date</label>
+                                    <span>
+                                        <input type="date" name="from_date" class="form-control">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label>To Date</label>
+                                    <span>
+                                        <input type='date' rows="5" name="to_date" class="form-control">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group text-center">
+                                    <span>
+                                        <input class="btn btn-primary" type="submit" name="filter" value="Filter">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </div>  
 </div>
 

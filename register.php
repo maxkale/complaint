@@ -26,7 +26,7 @@ if($userName&&$password&&$first_name&&$last_name&&$mobile&&$type)
 		<script>
 		 setTimeout(function(){ 
 		 location.href = 'login.php';
-		 }, 7000);
+		 }, 4000);
 		
 		</script>
 		";
@@ -38,7 +38,7 @@ if($userName&&$password&&$first_name&&$last_name&&$mobile&&$type)
 		<script>
 		 setTimeout(function(){ 
 		 location.href = 'login.php';
-		 }, 7000);
+		 }, 4000);
 		
 		</script>";
 		}
@@ -51,7 +51,7 @@ if($userName&&$password&&$first_name&&$last_name&&$mobile&&$type)
 		<script>
 		 setTimeout(function(){ 
 		 location.href = 'login.php';
-		 }, 7000);
+		 }, 4000);
 		
 		</script>
 		";
@@ -63,7 +63,7 @@ if($userName&&$password&&$first_name&&$last_name&&$mobile&&$type)
 		<script>
 		 setTimeout(function(){ 
 		 location.href = 'login.php';
-		 }, 7000);
+		 }, 4000);
 		
 		</script>
 		";
@@ -74,7 +74,7 @@ return "<h3>confirm password and password not match</h3>
 <script>
 		 setTimeout(function(){ 
 		 location.href = 'login.php';
-		 }, 7000);
+		 }, 4000);
 		
 		</script>
 
