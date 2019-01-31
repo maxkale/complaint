@@ -22,28 +22,63 @@ if($userName&&$password&&$first_name&&$last_name&&$mobile&&$type)
 		$sql = 'select * from user where mobile = '.$mobile;
 		mysqli_query($con,$sql);
 		if(mysqli_affected_rows($con)>0){
-		return 'Mobile Number already exist';
+		return "<h3> Mobile Number already exist</h3>
+		<script>
+		 setTimeout(function(){ 
+		 location.href = 'login.php';
+		 }, 7000);
+		
+		</script>
+		";
 		}
 		$sql = 'select * from user where username = '.$userName;
 		mysqli_query($con,$sql);
 		if(mysqli_affected_rows($con)>0){
-		return 'User Name already exist try another user name';
+		return "<h3>User Name already exist try another user name</h3>
+		<script>
+		 setTimeout(function(){ 
+		 location.href = 'login.php';
+		 }, 7000);
+		
+		</script>";
 		}
 		$insert = "insert user(first_name,last_name,mobile,username,password,type)
 		values('$first_name','$last_name',$mobile,'$userName','$password',$type)";
 		if(mysqli_query($con,$insert)){
 		return "User created successfully please login Please<a href='http://localhost/complaint/login.php'> click here </a> to login ";
 		}else{
-		return 'server congested try later';
+		return " <h3>server congested try later </h3>
+		<script>
+		 setTimeout(function(){ 
+		 location.href = 'login.php';
+		 }, 7000);
+		
+		</script>
+		";
 		}
 
 
 	}else{
-		return 'all feild is mandotary';
+		return "<h3> all feild is mandotary</h3>
+		<script>
+		 setTimeout(function(){ 
+		 location.href = 'login.php';
+		 }, 7000);
+		
+		</script>
+		";
 	}
 
 }else{
-return 'confirm password and password not matchh';
+return "<h3>confirm password and password not match</h3>
+<script>
+		 setTimeout(function(){ 
+		 location.href = 'login.php';
+		 }, 7000);
+		
+		</script>
+
+";
 }
 
 }
