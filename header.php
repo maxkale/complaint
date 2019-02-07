@@ -6,7 +6,7 @@ include 'auth.php';
 ?>
 <html lang="en">
     <head>
-        <title>Student Comaplaint System</title>
+        <title>Online Art Gallary</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -43,6 +43,7 @@ include 'auth.php';
                     <h3><?php echo $_SESSION['loggedInUser']['first_name'].' '.$_SESSION['loggedInUser']['last_name'];?></h3>
                     <ul class="nav nav-pills nav-stacked sidear">
                         <li class="active"><a href="javascript:void(0)">Dashboard</a></li>
+                        <li class="active"><a href="javascript:void(0)">Cart</a></li>
                       <!--  <li><a href="javascript()">Complaint List</a></li>
                         <li><a href="#section3">Action</a></li>-->
                         <li><a href="javascript:void(0)" onclick='logout()'>Logout</a></li>
