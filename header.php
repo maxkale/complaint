@@ -44,7 +44,7 @@ include 'auth.php';
                     <ul class="nav nav-pills nav-stacked sidear">
                         <li class="active"><a href="#section1">Dashboard</a></li>
                         <li><a href="#section2">Complaint List</a></li>
-                        <li><a href="#section3">Action</a></li>
+                     
                         <li><a href="javascript:void(0)" onclick='logout()'>Logout</a></li>
                     </ul><br>
                 </div>
