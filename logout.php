@@ -1,4 +1,4 @@
 <?php
-$_SESSION['loggedInUser'] = null;
+$_SESSION['loggedInUser'] = array();
 header('location:login.php');
 ?>

@@ -6,12 +6,12 @@ include 'auth.php';
 ?>
 <html lang="en">
     <head>
-        <title>Online Art Gallary</title>
+        <title>Student Comaplaint System</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 		<script src='js/app.js'></script>
         <style>
             /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
@@ -42,10 +42,9 @@ include 'auth.php';
                 <div class="col-sm-3 sidenav hidden-xs">
                     <h3><?php echo $_SESSION['loggedInUser']['first_name'].' '.$_SESSION['loggedInUser']['last_name'];?></h3>
                     <ul class="nav nav-pills nav-stacked sidear">
-                        <li class="active"><a href="javascript:void(0)">Dashboard</a></li>
-                        <li class="active"><a href="javascript:void(0)">Cart</a></li>
-                      <!--  <li><a href="javascript()">Complaint List</a></li>
-                        <li><a href="#section3">Action</a></li>-->
+                        <li class="active"><a href="#section1">Dashboard</a></li>
+                        <li><a href="#section2">Complaint List</a></li>
+                        <li><a href="#section3">Action</a></li>
                         <li><a href="javascript:void(0)" onclick='logout()'>Logout</a></li>
                     </ul><br>
                 </div>
