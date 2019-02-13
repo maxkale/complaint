@@ -32,6 +32,14 @@ function checkLogIn($data,$con){
 ?>
 
 <div class="container">
+<div class='col-sm-12'>
+<marquee><h4><strong>Student And Teacher </strong>Login and drop there Complaint here</h4></marquee>
+		<div class='col-sm-3'>
+		</div>
+			<div class='col-sm-9'>
+						<img src='index.jpg' width='65%' height='150px'>
+			</div>
+		</div>
     	<div class="row">
 			<div class="col-md-6 col-md-offset-3">
 				<div class="panel panel-login">
