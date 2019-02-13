@@ -99,7 +99,8 @@ if (isset($_POST['submit'])) {
 function addComplaint($data, $con) {
 	$userId = $_SESSION['loggedInUser']['id'];
     $query = "insert into complaint(subject,decription,user_id,status,date)
-	values(" . "'" . $data['subject'] . "'" . "," . "'" . $data['description'] . "'" . ",".$userId.",1,date('Y-m-d h:i:s'))";
+	values(" . "'" . $data['subject'] . "'" . "," . "'" . $data['description'] . "'" . ",".$userId.",1,"."'".date('Y-m-d h:i:s')."'".")";
+
     $sql = mysqli_query($con, $query);
     if ($sql) {
         echo "<script>alert('Add Successfully');
